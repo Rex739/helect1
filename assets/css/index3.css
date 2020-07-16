@@ -26,7 +26,7 @@ body{
 .collapse-btn{
 	background: var(--collaspe_btn-color);
 	border: none;
-	padding: 1rem 4rem;
+	/*padding: 1rem 4rem;*/
 	border-radius: 0px 0px 20px 20px;
 	outline: none;
 }
@@ -39,11 +39,11 @@ body{
 }
 .subscribe-btn{
 	border-radius: 10px;
-	font-family: var(--nav-font);
-	text-align: right;
+	font-family: var(--primary-font);
+	text-align: center;
 }
 .preview-btn, .preview-btn a{
-	font-family: var(--nav-font);
+	font-family: var(--primary-font);
 	border-radius: 10px;
 	color: var(--white-color);
 }
@@ -107,6 +107,7 @@ body{
 		background-color: var(--white-color);
 		padding: 5px 10px;
 		border-color: var(--white-color);
+		width: 100%;
 
 	}
 	.email::placeholder{
@@ -258,7 +259,7 @@ body{
 		height: 100vh;
 	}
 	.collapse-btn{	
-		padding: 0.5rem 3rem 0.1rem;
+		padding: 0.5rem 3rem 0.1rem 3rem;
 		border-radius: 0px 0px 25px 25px;
 	}
 	.timer{
