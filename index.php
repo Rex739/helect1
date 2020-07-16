@@ -1,13 +1,15 @@
 <?php
+
 $email ="";
 if(isset($_POST['submit'])){
 	$email = $_POST['email'];
-	$conn = new mysqli("nnmeqdrilkem9ked.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "uvekkor8ppw3s39i","oy2hci2sbtwbhs3a","mk9b4mpsfztl7h0x");
-	$cmd = "INSERT into registration('$email');";
+	$conn = new mysqli("nnmeqdrilkem9ked.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306",
+	 "uvekkor8ppw3s39i", "oy2hci2sbtwbhs3a", "mk9b4mpsfztl7h0x");
+	$cmd = "INSERT into email value ('$email');";
 	if(mysqli_query($conn, $cmd)){
 		echo "Successful";
 	}else{
-		"Not Save"; 
+		"try again"; 
 	}
 }
 ?> 
@@ -17,7 +19,7 @@ if(isset($_POST['submit'])){
 <head>
 	<meta charset="utf-8">
 	<!-- WEBSITE DESCRIPTION -->
-	<meta name="description" content="PETE: MUSIC TEMPLATE">
+	<meta name="description" content="H_ELECT: VOTE FROM YOUR THE COMFORT OF YOUR HOME">
 	<meta name="keyword" content="HTML, CSS, BOOTSTRAP, JAVACRIPT">
 	<meta name="author" centent="Rex[02]">
 	<!-- OPTIMIZIED VIEWPORT FOR MOBILE -->
